@@ -1,0 +1,7 @@
+<input type="file" multiple (change)="abrir($event)" />
+<textarea (keyup)="sugerir(textarea.value)" #textarea></textarea>
+<div class="sugestoes">
+  <button (click)="digita(item)" *ngFor="let item of sugestoes">
+    {{item}}
+  </button>
+</div>
